@@ -1,0 +1,23 @@
+@media screen and (min-width: 768px) {
+  .restaurant-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .restaurant-item img {
+    height: 275px;
+  }
+
+  .restaurant-item__content {
+    height: 225px;
+  }
+
+  .restaurant-item__content .description {
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .restaurant-list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

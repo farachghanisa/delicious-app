@@ -1,0 +1,88 @@
+header {
+  background-color: #212529;
+  top: 0;
+  position: sticky;
+  z-index: 2;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+}
+
+app-bar {
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+app-bar .drawer-button {
+  padding: 8px 10px;
+  margin-right: 16px;
+  font-weight: 700;
+  font-size: 28px;
+  background-color: transparent;
+  border: 0;
+  border-radius: 8px;
+  cursor: pointer;
+  display: none;
+  color: white;
+}
+
+app-bar .drawer-button:hover {
+  color: #f5cb5c;
+}
+
+app-bar .brand {
+  margin-right: 32px;
+  height: 50px;
+}
+
+app-bar nav ul li {
+  display: inline;
+}
+
+app-bar nav ul li a {
+  display: inline-block;
+  padding: 16px;
+  text-decoration: none;
+  color: white;
+}
+
+app-bar nav ul li a:hover {
+  color: #f5cb5c;
+}
+
+@media screen and (max-width: 750px) {
+  app-bar {
+    justify-content: flex-start;
+  }
+
+  app-bar .drawer-button {
+    display: inline-block;
+  }
+
+  app-bar nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    transform: translateX(-200px);
+    background-color: #212529;
+    min-height: 100vh;
+    width: 200px;
+    transition: transform 0.3s ease-in-out;
+  }
+
+  app-bar nav ul li, app-bar nav ul li a {
+    display: block;
+  }
+
+  app-bar nav.open {
+    transform: translateX(0);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  app-bar nav ul li a {
+    color: white;
+  }
+}

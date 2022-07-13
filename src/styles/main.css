@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Noto Sans', sans-serif;
+}
+
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  padding: 8px;
+  background-color: #f5cb5c;
+  color: #212529;
+  z-index: 100;
+}
+
+.skip-link:focus {
+  top: 0;
+}
+
+main {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.content {
+  padding: 16px;
+  max-width: 1200px;
+  margin: 0 auto;
+  min-height: 100vh;
+}
+
+.content h2 {
+  text-align: center;
+  padding: 32px;
+  font-size: 28px;
+}
+
+.restaurant-list {
+  margin: 32px auto;
+  display: grid;
+  grid-gap: 32px;
+}
+
+.restaurant-item {
+  border: 1px solid #cfdbd5;
+  border-radius: 8px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.restaurant-item img {
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
+}
+
+.restaurant-item__content {
+  padding: 16px;
+  height: 190px;
+}
+
+.restaurant-item__content .rating {
+  margin-bottom: 8px;
+  color: #212529;
+}
+
+.restaurant-item__content .restaurant__name a {
+  font-size: 20px;
+  color: #212529;
+  text-decoration: none;
+  padding: 10px 0;
+}
+
+.restaurant-item__content .city {
+  color: #333533;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.restaurant-item__content .description {
+  margin: 8px 0;
+  font-size: 14px;
+  line-height: 1.5em;
+  color: #212529;
+}
