@@ -3,7 +3,7 @@ import CONFIG from '../../globals/config';
 const createRestaurantDetailTemplate = (restaurant) => ` 
   <picture>
   <source media="(max-width: 600px)" srcset="${CONFIG.BASE_IMAGE_URL + /small/ + restaurant.pictureId}">
-    <img class="restaurant__image lazyload" src="${CONFIG.BASE_IMAGE_URL + /medium/ + restaurant.pictureId}" alt="${restaurant.name}">
+    <img class="restaurant__image" src="${CONFIG.BASE_IMAGE_URL + /medium/ + restaurant.pictureId}" alt="${restaurant.name}">
   </picture>
   <div class="restaurant-info">
     <div class="restaurant-info__header">
@@ -70,7 +70,7 @@ const createRestaurantDetailTemplate = (restaurant) => `
 
 const createRestaurantItemTemplate = (restaurant) => `
   <div class="restaurant-item" tabindex="0">
-    <img class="lazyload" src="${CONFIG.BASE_IMAGE_URL + /small/ + restaurant.pictureId}" alt="${restaurant.name || '-'}" >
+    <img class="lazyload" data-src="${CONFIG.BASE_IMAGE_URL + /small/ + restaurant.pictureId}" alt="${restaurant.name || '-'}" >
     <div class="restaurant-item__content">
       <p class="rating"><span>⭐️</span> ${restaurant.rating || '-'}</p>
       <h3 class="restaurant__name">

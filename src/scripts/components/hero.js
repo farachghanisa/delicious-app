@@ -11,7 +11,7 @@ class Hero extends HTMLElement {
           <source media="(max-width: 600px)" type="image/jpeg" srcset="./images/heros/hero-image_4-medium.jpg">
           <source type="image/webp" srcset="./images/heros/hero-image_4-large.webp">
           <source type="image/jpeg" srcset="./images/heros/hero-image_4-large.jpg">
-          <img class="lazyload" src="./images/heros/hero-image_4-large.jpg" alt="hero image">
+          <img src="./images/heros/hero-image_4-large.jpg" alt="hero image">
         </picture>
       </div>
       <div class="hero-overlay">
